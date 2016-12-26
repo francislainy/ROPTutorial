@@ -34,17 +34,20 @@
         android:text="@string/premature_birth" />
 
     <RadioGroup
+        android:id="@+id/premature_birth_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingLeft="16dp">
 
         <RadioButton
+            android:id="@+id/premature_birth_button_yes"
             style="@style/radio_button"
             android:paddingRight="16dp"
             android:text="Yes" />
 
         <RadioButton
+            android:id="@+id/premature_birth_button_no"
             style="@style/radio_button"
             android:text="No" />
 
@@ -55,17 +58,20 @@
         style="@style/question" />
 
     <RadioGroup
+        android:id="@+id/tutorial_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingLeft="16dp">
 
         <RadioButton
+            android:id="@+id/tutorial_yes"
             style="@style/radio_button"
             android:paddingRight="16dp"
             android:text="Yes" />
 
         <RadioButton
+            android:id="@+id/tutorial_no"
             style="@style/radio_button"
             android:text="No" />
 

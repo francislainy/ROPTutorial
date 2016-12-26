@@ -3,4 +3,11 @@
     <string name="subheading">A Care Guide for Mothers of Premature Babies</string>
     <string name="title">Born too soon</string>
     <string name="description">The tutorial source is the "Born too soon" and "Retinopathy of Prematurity" publications by the American EyeCare Project </string>
+    <string name="description_of_survey">Now that you are aware of ROP, please take this small survey</string>
+    <string name="premature_birth">Did you know about the risks of premature birth before viewing this tutorial?</string>
+    <string name="tutorial">Was this tutorial helpful to you?</string>
+    <string name="fits_you_more">Which of these fits you more?</string>
+    <string name="expecting_child">You are expecting a child and want to be prepared</string>
+    <string name="have_a_premature_child">You currently have a premature newborn and care about his/her health</string>
+    <string name="know_someone">You know someone with Retinopathy (ROP) and want to learn more about the disease</string>
 </resources>

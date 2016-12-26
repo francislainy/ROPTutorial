@@ -113,7 +113,7 @@
 
             <TextView
                 style="@style/text_checkbox"
-                android:text="@string/have_a_premature_child" />
+                android:text="@string/has_a_premature_child" />
 
         </LinearLayout>
 
@@ -128,7 +128,7 @@
 
             <TextView
                 style="@style/text_checkbox"
-                android:text="@string/know_someone" />
+                android:text="@string/knows_someone" />
 
         </LinearLayout>
 

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ROP Tutorial</string>
+    <string name="subheading">A Care Guide for Mothers of Premature Babies</string>
+    <string name="title">Born too soon</string>
+    <string name="description">The tutorial source is the "Born too soon" and "Retinopathy of Prematurity" publications by the American EyeCare Project </string>
+</resources>

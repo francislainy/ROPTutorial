@@ -3,6 +3,7 @@ package com.example.android.roptutorial;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -101,19 +102,23 @@ public class SurveyActivity extends AppCompatActivity {
         submitSurveyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String surveyResult = "Thank you for taking part on our survey. This is the information you have provided to us:\n";
-                surveyResult += "\n\n" + getString(R.string.premature_birth) + " " + knowsRisksPrematureBirth;
-                surveyResult += "\n\n" + getString(R.string.tutorial) + " " + wasTutorialHelpful;
-                surveyResult += "\n\n" + getString(R.string.fits_you_more);
-                surveyResult += "\n\n" + getString(R.string.expecting_child) + ": " + isExpectingChild;
-                surveyResult += "\n\n" + getString(R.string.has_a_premature_child) + ": " + hasPrematureNewBorn;
-                surveyResult += "\n\n" + getString(R.string.knows_someone) + ": " + knowsSomeoneWithROP;
-
+                String surveyResult = surveyResultMessage();
                 submitSurvey(surveyResult);
             }
         });
 
+    }
+
+    @NonNull
+    private String surveyResultMessage() {
+        String surveyResult = "Thank you for taking part on our survey. This is the information you have provided to us:\n";
+        surveyResult += "\n\n" + getString(R.string.premature_birth) + " " + knowsRisksPrematureBirth;
+        surveyResult += "\n\n" + getString(R.string.tutorial) + " " + wasTutorialHelpful;
+        surveyResult += "\n\n" + getString(R.string.fits_you_more);
+        surveyResult += "\n\n" + getString(R.string.expecting_child) + ": " + isExpectingChild;
+        surveyResult += "\n\n" + getString(R.string.has_a_premature_child) + ": " + hasPrematureNewBorn;
+        surveyResult += "\n\n" + getString(R.string.knows_someone) + ": " + knowsSomeoneWithROP;
+        return surveyResult;
     }
 
     public void submitSurvey(String surveyResult) {
